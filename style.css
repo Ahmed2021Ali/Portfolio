@@ -200,7 +200,7 @@ header ul li a:hover  {
     .main  .social div.links  a {
         margin-right: 15px;
     }
-    .main .container .image img{display: none; }
+    .main .container .image img
 }
 /* End Main Section */
 /* Start Services Section */
