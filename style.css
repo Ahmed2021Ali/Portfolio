@@ -253,8 +253,8 @@ section.service .service-content .box:hover {
 }
 /* End Services Section */
 #Skills img {    
-    width: 85%;
-    max-width: 180px;
+    width: 40%;
+    max-width: 80px;
 }
 /* Start Projects Section */
 section.projects {
@@ -424,3 +424,53 @@ footer .social a {
     }
 }
 /* End Footer Section */
+
+
+
+
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1);
+}
+
+.col {
+    overflow: hidden;
+    position: relative;
+}
+
+.d-flex {
+    position: relative;
+    transition: transform 0.3s ease, border-radius 0.3s ease; /* Add transition for border radius */
+}
+
+.col:hover .d-flex {
+    transform: scale(1.2);
+    border-radius: 10px; /* Set the desired border radius value */
+    z-index: 1;
+}
+
+.d-flex::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.col:hover .d-flex::before {
+    opacity: 1;
+}
+
+.d-flex:hover {
+    background-color: #ebebeb;
+    color: #000000; /* Change text color to black */
+    font-weight: bold;
+}
